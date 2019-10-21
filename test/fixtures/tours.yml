@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  place: MyText
+  start_at: 2019-10-17 20:43:16
+  number_of_day: 1
+
+two:
+  price: 1
+  place: MyText
+  start_at: 2019-10-17 20:43:16
+  number_of_day: 1
