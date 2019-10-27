@@ -1,0 +1,4 @@
+class ToursController < Admin::BaseController
+
+
+

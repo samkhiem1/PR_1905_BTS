@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
 
   def index
-    @user = User.all
+    @users = User.all
   end
   def show
     @user = User.find(params[:id])
@@ -55,6 +55,14 @@ class UsersController < ApplicationController
     @user.admin = true
     @user.save
     flash[:success] = "#{@user.name} is Admin"
+    redirect_to users_path
+  end
+
+  def set_to_normal_user
+    @user = User.find(params[:user_id])
+    @user.admin = false
+    @user.save
+    flash[:success] = "#{@user.name} is normal user"
     redirect_to users_path
   end
 

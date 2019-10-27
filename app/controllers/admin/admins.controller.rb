@@ -1,4 +1,0 @@
-class AdminsController < Admin::BaseController
-
-
-
