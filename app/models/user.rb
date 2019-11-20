@@ -1,8 +1,9 @@
 class User < ApplicationRecord
+  before_save { email.downcase! }
   has_many :reviews
   has_many :ratings
   has_many :activities
-  belongs_to :booking
+  has_one :booking
   before_save { email.downcase! }
   validates :name,  presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
