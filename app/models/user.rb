@@ -12,7 +12,6 @@ class User < ApplicationRecord
                   uniqueness: { case_sensitive: false }
   validates :age, presence: true
   validates :phone, presence: true,length: { maximum: 10 }
-
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 end

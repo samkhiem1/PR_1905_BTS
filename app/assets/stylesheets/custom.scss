@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* header */
 
-#logo {
+  #logo {
     float: left;
     margin-right: 10px;
     font-size: 1.7em;
@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 9px;
     font-weight: bold;
   }
+
 
   #logo:hover {
     color: #fff;
@@ -185,4 +186,11 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+.form-control.datepicker {
+  column: #00A699;
+  background-color: white;
+  border: 1px solid #00A699;
+  text-align: center;
 }
