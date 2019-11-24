@@ -1,5 +1,5 @@
 class Tour < ApplicationRecord
-  belongs_to :booking, optional: true
+  has_many  :booking
   has_many  :reviews
   has_many  :ratings
   has_many  :activities
