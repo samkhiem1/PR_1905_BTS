@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root   'static_pages#home'
+  root   'tours#index'
   get  '/support',    to: 'static_pages#support'
   get    '/help',     to: 'static_pages#help'
   get    '/about',    to: 'static_pages#about'
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   delete '/logout',   to: 'sessions#destroy'
 
   resources :users, only: [:index, :create, :new, :show,:edit, :update]
-
+  resources :tours, only: [:index, :show]
   namespace :admin do
     resources :users
     resources :tours

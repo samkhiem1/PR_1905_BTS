@@ -1,0 +1,17 @@
+<div class="destination item">
+  <div class="destination_image">
+      <%= image_tag tour.picture.url if tour.picture? %>
+    <div class="spec_offer text-center">
+      <%= link_to tour.place, "#" %>
+    </div>
+  </div>
+  <div class="destination_content">
+    <div class="destination_title">
+      <%= link_to tour.name, tour_path(tour) %>
+    </div>
+    <div class="destination_subtitle">
+      <p class="destination_price"><%= tour.price %>day</p>
+    </div>
+    <div class="destination_price"><%= tour.price %><% %></div>
+  </div>
+</div>
